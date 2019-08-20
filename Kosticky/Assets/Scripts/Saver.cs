@@ -33,6 +33,7 @@ public class Saver : MonoBehaviour
             Directory.CreateDirectory(Application.persistentDataPath + "/SaveSlot");
         }
 
+        Debug.Log("Created");
         SaveChunk data = new SaveChunk(chunk);
         string path = Application.persistentDataPath + "/SaveSlot/Chunk[" + data.chunkIdX + ";" + data.chunkIdZ + "].save";
 
@@ -101,7 +102,7 @@ public class Saver : MonoBehaviour
 
     public bool isFileExists()
     {
-        string path = Application.persistentDataPath + "/SaveSlot";
+        string path = Application.persistentDataPath + "/SaveSlot/GlobalData.save";
 
         if (File.Exists(path))
         {

@@ -47,6 +47,7 @@ public class World : MonoBehaviour
     {
         if (saver.isFileExists() == true)
         {
+            Debug.Log("1");
             SaveGlobal global = saver.LoadGlobalData();
 
             offsetX = global.offsetX;
@@ -70,6 +71,7 @@ public class World : MonoBehaviour
         }
         else
         {
+            Debug.Log("2");
             player = Instantiate(playerGO, new Vector3(worldX / 2f, 50f, worldZ / 2f), Quaternion.identity);
             modify.playerGO = player;
             saver.playerGO = player;
