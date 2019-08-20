@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7532522721428410791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7532522721428410789}
+  - component: {fileID: 7532522721428410790}
+  - component: {fileID: 7532522721428410788}
+  - component: {fileID: 7532522721428410787}
+  m_Layer: 0
+  m_Name: World
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7532522721428410789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532522721428410791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7532522721428410790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532522721428410791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e319ecfe16cc0c4686f62a82ca5e34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkGO: {fileID: 8299045428239233183, guid: 6c5953e1d0aaeef47846bb6cc5c395c4, type: 3}
+  playerGO: {fileID: 0}
+  saver: {fileID: 0}
+  chunkSize: 32
+  chunkHeight: 64
+  renderDistance: 64
+  offsetX: 0
+  offsetZ: 0
+--- !u!114 &7532522721428410788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532522721428410791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973ed649ff4eef64aa53ca398897ffd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerGO: {fileID: 0}
+  wireframeGO: {fileID: 1835685691094736449, guid: 1673c2fd65a95854a801c9f082424dc4,
+    type: 3}
+  stoneDestroyingTime: 4
+  sandDestroyingTime: 1.25
+  dirtDestroyingTime: 2
+  snowDestroyingTime: 0.75
+--- !u!114 &7532522721428410787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532522721428410791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a0e82f78f8d21942af3a88df6798a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  slotImage: {fileID: 21300000, guid: 879677d43a2198f4eb553409738f95e3, type: 3}
+  highlightSlotImage: {fileID: 21300000, guid: 15915ea130f75b0488769c46fbfe0eb4, type: 3}
+  currentByte: 4
